@@ -14,7 +14,7 @@ export const ViewWorkers = () => {
      const handledelete = async (id) => {
       try {
        const response = await fetch(
-          `https://manolos05-ideal-xylophone-7q55p7xj9jgcp9g6-3001.preview.app.github.dev/user/${id}`,
+          `https://manolos05-cautious-umbrella-g9rr7xpw9q43w95r-3001.preview.app.github.dev/user/${id}`,
           {
             method: "DELETE",
           }

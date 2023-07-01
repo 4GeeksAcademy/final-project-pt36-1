@@ -20,7 +20,7 @@ export const Signup = () =>  {
     const createUserRequest = async () => {
             try {
                 await fetch(
-                  "https://manolos05-ideal-xylophone-7q55p7xj9jgcp9g6-3001.preview.app.github.dev/signup",
+                  "https://manolos05-cautious-umbrella-g9rr7xpw9q43w95r-3001.preview.app.github.dev/signup",
                   {
                     method: "POST",
                     body: JSON.stringify({

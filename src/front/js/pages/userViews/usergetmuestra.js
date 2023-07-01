@@ -30,7 +30,7 @@ export const UserGetMuestra = () => {
     useEffect(()=>{
             try {
                 const getMuestras = async () => {
-                    const resp = await fetch(`https://manolos05-ideal-xylophone-7q55p7xj9jgcp9g6-3001.preview.app.github.dev/user/${storageUSer.id}/muestras`)
+                    const resp = await fetch(`https://manolos05-cautious-umbrella-g9rr7xpw9q43w95r-3001.preview.app.github.dev/user/${storageUSer.id}/muestras`)
                     const data = await resp.json()
                     setMuestras(data)  
                   
@@ -45,7 +45,7 @@ export const UserGetMuestra = () => {
 
      const handleChangeSampleData = async (id) =>{
       try{
-          fetch(`https://manolos05-ideal-xylophone-7q55p7xj9jgcp9g6-3001.preview.app.github.dev//muestra/${id}`,
+          fetch(`https://manolos05-cautious-umbrella-g9rr7xpw9q43w95r-3001.preview.app.github.dev/muestra/${id}`,
           {
               method: "PUT",
               body: JSON.stringify({

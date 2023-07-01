@@ -27,7 +27,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			login: async ({email, password, navigate}) => {
 				try {
 					const response = await fetch(
-					  "https://manolos05-ideal-xylophone-7q55p7xj9jgcp9g6-3001.preview.app.github.dev/login",
+					  "https://manolos05-cautious-umbrella-g9rr7xpw9q43w95r-3001.preview.app.github.dev//login",
 					  {
 						method: "POST",
 						headers: {
@@ -55,7 +55,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			getUser: async()=>{
 				const store = getStore()
 				try{
-					const response = await fetch("https://manolos05-ideal-xylophone-7q55p7xj9jgcp9g6-3001.preview.app.github.dev/dashboard", {
+					const response = await fetch("https://manolos05-cautious-umbrella-g9rr7xpw9q43w95r-3001.preview.app.github.dev/dashboard", {
 						headers: {Authorization:  `Bearer ${store.authToken}`}
 					  });
 					if (response.ok){
@@ -73,7 +73,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			loadUser: async()=>{
 				const store = getStore();
 				try {
-					const response = await fetch("https://manolos05-ideal-xylophone-7q55p7xj9jgcp9g6-3001.preview.app.github.dev/user", {
+					const response = await fetch("https://manolos05-cautious-umbrella-g9rr7xpw9q43w95r-3001.preview.app.github.dev/user", {
 						headers: {Authorization:  `Bearer ${store.authToken}`}
 					});
 					if (response.ok){
@@ -90,7 +90,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			postSample: async({ ubication_image, area, specimen, quality_specimen, image_specimen, aditional_comments})=>{
 				try {
 					const response = await fetch(
-					  "https://manolos05-ideal-xylophone-7q55p7xj9jgcp9g6-3001.preview.app.github.dev/muestra",
+					  "https://manolos05-cautious-umbrella-g9rr7xpw9q43w95r-3001.preview.app.github.dev/muestra",
 					  {
 						method: "POST",
 						headers: {
@@ -124,7 +124,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			editarMuestra: async ({id, ubication, ubication_image, area, specimen, quality_specimen, image_specimen, aditional_comments}) => {
 				try {
 					const response = await fetch(
-					  `https://manolos05-ideal-xylophone-7q55p7xj9jgcp9g6-3001.preview.app.github.dev/muestra/${id}`,
+					  `https://manolos05-cautious-umbrella-g9rr7xpw9q43w95r-3001.preview.app.github.dev/muestra/${id}`,
 					  {
 						method: "PUT",
 						headers: {
@@ -153,7 +153,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			getSample: async()=>{
 				const store = getStore()
 				try{
-					const response = await fetch("https://manolos05-ideal-xylophone-7q55p7xj9jgcp9g6-3001.preview.app.github.dev/muestra");
+					const response = await fetch("https://manolos05-cautious-umbrella-g9rr7xpw9q43w95r-3001.preview.app.github.dev/muestra");
 					if (response.ok){
 						const data = await response.json();
 						setStore({getMuestra: data})

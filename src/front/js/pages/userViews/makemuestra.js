@@ -56,7 +56,7 @@ export const MakeMuestra = () => {
         if (tasks === null) {
         try{
             const getTasks = async () =>{
-                const res = await fetch(`https://manolos05-ideal-xylophone-7q55p7xj9jgcp9g6-3001.preview.app.github.dev/user/${storageUSer.id}/projects`)
+                const res = await fetch(`https://manolos05-cautious-umbrella-g9rr7xpw9q43w95r-3001.preview.app.github.dev/${storageUSer.id}/projects`)
                 const data = await res.json();
                 setTasks(data)
                 
@@ -76,7 +76,7 @@ export const MakeMuestra = () => {
     const createSampleRequest = async () => {
         try {
             await fetch(
-              "https://manolos05-ideal-xylophone-7q55p7xj9jgcp9g6-3001.preview.app.github.dev/muestra",
+              "https://manolos05-cautious-umbrella-g9rr7xpw9q43w95r-3001.preview.app.github.dev/muestra",
               {
                 method: "POST",
                 body: JSON.stringify({
@@ -104,7 +104,7 @@ export const MakeMuestra = () => {
 
         const handleChangeProjectState = async () =>{
             try{
-                fetch(`https://manolos05-ideal-xylophone-7q55p7xj9jgcp9g6-3001.preview.app.github.dev/proyecto/${selectedTask[0].id}`,
+                fetch(`https://manolos05-cautious-umbrella-g9rr7xpw9q43w95r-3001.preview.app.github.dev/proyecto/${selectedTask[0].id}`,
                 {
                     method: "PUT",
                     body: JSON.stringify({
